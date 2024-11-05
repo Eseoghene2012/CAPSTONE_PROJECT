@@ -43,7 +43,13 @@ THEN 1 ELSE 0 END) = 0
 ---
 ![Bar Chart 3](https://github.com/user-attachments/assets/e994a07c-32f7-43cc-bfff-9ef318386b5f)
 
+
+
+
 ![Pie Graph](https://github.com/user-attachments/assets/b7542274-bf30-4594-a0c4-23bb3f99cda4)
+
+
+
 
 ![Bar Chart](https://github.com/user-attachments/assets/2c0e4eee-dddc-4486-9309-db124d81e515)
 
