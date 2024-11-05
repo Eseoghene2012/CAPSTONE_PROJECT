@@ -89,6 +89,7 @@ THEN 1 ELSE 0 END) = 0
 SELECT region, COUNT(*) AS total_customers
 FROM customerdata
 GROUP BY region;
+```
 
 ### Data Visualization
 ---
@@ -104,5 +105,5 @@ GROUP BY region;
 
 ![Bar Chart](https://github.com/user-attachments/assets/2c0e4eee-dddc-4486-9309-db124d81e515)
 
-```
+
 
