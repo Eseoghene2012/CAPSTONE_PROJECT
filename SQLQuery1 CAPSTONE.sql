@@ -3,7 +3,7 @@ SELECT * FROM [dbo].[SalesData]
 
 SELECT * FROM [dbo].[CustomerData]
 
-SELECT Product, SUM(sales) AS Totalsales
+SELECT Product, SUM(total_sales) AS Totalsales
 from [dbo].[SalesData]
 Group by Product
 
@@ -17,7 +17,7 @@ from salesdata
 group by Product
 order by Total_sales Desc
 
-select product, sum(totalsales) as TotalRevenue
+select product, sum(total_sales) as TotalRevenue
 from Salesdata
 group by product
 
@@ -34,9 +34,31 @@ ORDER BY TOTALPURCHASEAMOUNT DESC
 SELECT REGION, SUM(TOTAL_SALES) AS REGIONTOTALSALES,
 FORMAT(ROUND((SUM(TOTAL_SALES)/ CAST((SELECT SUM(TOTAL_SALES)
 FROM SALESDATA) AS DECIMAL(10,2))*100), 1),'0.#')
+AS PERCENTAGEOFTOTALSALES
+FROM SALESDATA
+GROUP BY REGION
+ORDER BY PERCENTAGEOFTOTALSALES DESC
 
 SELECT PRODUCT FROM SALESDATA
 GROUP BY PRODUCT
 HAVING SUM(CASE WHEN ORDERDATE BETWEEN '2024-06-01' AND
 '2024-08-31'
 THEN 1 ELSE 0 END) = 0
+
+SELECT region, COUNT(*) AS total_customers
+FROM customerdata
+GROUP BY region;
+
+SELECT subscriptiontype, COUNT(*) AS total_customers
+FROM customerdata
+GROUP BY subscriptiontype
+ORDER BY total_customers DESC
+
+SELECT region, COUNT(*) AS cancellation_count
+FROM customerdata
+WHERE status = 'canceled'
+  AND cancellation_date IS NOT NULL
+GROUP BY region
+ORDER BY canceled DESC
+
+
