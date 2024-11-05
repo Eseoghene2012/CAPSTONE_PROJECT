@@ -146,4 +146,11 @@ FROM [dbo].[CustomerData]
 ---
 ![POWERBI VISUALS](https://github.com/user-attachments/assets/c808b004-ca25-4c12-a969-0e22203a5ddb)
 
+### Analysis Files
+[LITA Capstone Dataset PROJECT.xlsx](https://github.com/user-attachments/files/17639255/LITA.Capstone.Dataset.PROJECT.xlsx)
+
+[Uploading SQLQuery1 CAPSTONE.sql…]()
+
+
+
 
