@@ -105,5 +105,8 @@ GROUP BY region;
 
 ![Bar Chart](https://github.com/user-attachments/assets/2c0e4eee-dddc-4486-9309-db124d81e515)
 
+### PowerBI Visualization
+---
+![POWERBI VISUALS](https://github.com/user-attachments/assets/c808b004-ca25-4c12-a969-0e22203a5ddb)
 
 
